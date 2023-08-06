@@ -23,6 +23,8 @@ Este é o repositório destinado aos meus estudos da linguagem de programação 
 4. Compile o programa usando o comando `go build` seguido pelo nome do arquivo Go. O executável será gerado na mesma pasta.
 
 5. Execute o programa compilado usando `./nome-do-executavel`.
+   
+6. De forma mais simples, é possivel executar sem gerar o arquivo executável utilizando `go run`
 
 ## Go Workspace
 
@@ -39,6 +41,20 @@ pasta-do-usuario/
     └── src
 
 Mas se quisermos que o Go Workspace seja em outro lugar, pode? Pode ser, mas por padrão o instalador do Go já espera que essa pasta esteja na raiz do usuário, então, para nos facilitar, vamos seguir os padrões da linguagem.
+
+## Váriaveis
+
+Para declarar uma variável em Go, utilizamos a palavra var seguida do nome da variável mais o seu tipo. Como é um texto, o seu tipo será string, e vamos logo inicializá-la: `var nome string = "Douglas"`.
+
+As váriaveis não tem necessidade de ser atribuídas logo na sua inicialização, elas podem ser apenas inicializadas e seu valor ser atribuido depois. Caso a váriavel não seja atribuída, ela será vazia
+
+o Go não permite a não utilização de váriaveis, caso tenha declarado, ela tem que ser usada em alguma função.
+
+## Armazenamento de Váriaveis
+
+Para armazenar uma váriavel após a sua declaração, é necessário colocar um & antes para indicar o endereço da memória onde o valor indicado será alocado, exemplo:
+
+`fmt.Scanf("%d", &comando)`
 
 ## Contribuições e Issues:
 
